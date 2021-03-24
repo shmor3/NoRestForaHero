@@ -1,6 +1,6 @@
 .footer {
-  padding: 2rem 0;
-  background: var(--lightGrey);
+  padding: 1rem 0;
+  background: rgba(221, 221, 221, 0.253);
   font-size: 1.2rem;
 }
 

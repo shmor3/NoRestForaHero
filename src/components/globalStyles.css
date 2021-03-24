@@ -143,7 +143,9 @@ blockquote {
 .taRight {
   text-align: right;
 }
-
+.socialMedia {
+  text-align: center;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
