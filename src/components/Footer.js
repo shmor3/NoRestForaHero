@@ -21,6 +21,7 @@ const FooterContainer = styled.footer`
   .cR {
     display: flex;
     position: relative;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: baseline;
     vertical-align: center;
@@ -58,6 +59,7 @@ const Info = styled.div`
 
 const Contact = styled.div`
 display: flex;
+flex-wrap: nowrap;
 position: relative;
 flex-direction: column;
 justify-content: center;
@@ -76,18 +78,41 @@ padding-top: 0.2rem;
 
 const Social = styled.div`
 display: flex;
+flex-wrap: nowrap;
 position: relative;
 flex-direction: row;
 justify-content: center;
 vertical-align: center;
 color: black;
-margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+margin: 0rem 0.2rem 0.2rem 0rem;
 text-decoration: none;
-padding-top: 0.2rem;
   a {
     color: black;
     margin: 0.2rem 0.2rem 0.2rem 0.2rem;
     text-decoration: none;
+  }
+  .socialMedia {
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    #fb {
+      background-image: url("/facebook.png");
+      margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+      width: 5rem;
+    }
+    #ig {
+      background-image: url("/instagram.png");
+      margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+      width: 5rem;
+    }
+    #tw {
+      background-image: url("/twitter.png");
+      margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+      width: 5rem;
+    }
   }
 `
 
@@ -95,12 +120,13 @@ const Navigation = styled.ul`
   display: flex;
   flex-direction: row;
   vertical-align: top;
+  text-align: center;
   justify-content: center;
   list-style: none;
   margin: 0.2rem 0.2rem 0.2rem 0.2rem;
   li {
+    padding: 0.75rem;
     color: black;
-    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
     text-decoration: none;
   }
 `
@@ -113,22 +139,19 @@ export default () => (
           <div className="container taLeft">
           <Navigation>
               <li>
-                <Link href="/">News</Link>
+                <a href="/">About</a>
               </li>
               <li>
-                <Link href="/">Blog</Link>
+                <a href="/">Blog</a>
               </li>
               <li>
-                <Link href="/">Company</Link>
+                <a href="/">Contact</a>
               </li>
               <li>
-                <Link href="/">Contact</Link>
+                <a href="/">Terms</a>
               </li>
               <li>
-                <Link href="/">Legal</Link>
-              </li>
-              <li>
-                <Link href="/">Contact</Link>
+                <a href="/">Privacy</a>
               </li>
             </Navigation>
             <div className="cR">
@@ -144,8 +167,11 @@ export default () => (
           </div>
           <div className="container taRight">
             <Social>
-                <a href="/">Facebook</a>
-                <a href="/">Instagram</a>
+            <div className="socialMedia">
+            <a className="Logo" id="fb" href="https://www.facebook.com"></a>
+            <a className="Logo" id="ig" href="https://www.instagram.com"></a>
+            <a className="Logo"id="tw" href="https://www.twitter.com"></a>
+            </div>
             </Social>
             <Contact>
                 <a href="mailto:info@google.com">support@gatsbystarter.com</a>
