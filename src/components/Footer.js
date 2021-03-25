@@ -100,18 +100,15 @@ text-decoration: none;
     justify-content: center;
     #fb {
       background-image: url("/facebook.png");
-      margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-      width: 5rem;
+      width: 2rem;
     }
     #ig {
       background-image: url("/instagram.png");
-      margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-      width: 5rem;
+      width: 2rem;
     }
     #tw {
       background-image: url("/twitter.png");
-      margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-      width: 5rem;
+      width: 2rem;
     }
   }
 `
