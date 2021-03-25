@@ -155,9 +155,6 @@ export default () => (
                 <a href="/">Privacy</a>
               </li>
             </Navigation>
-            <div className="cR">
-              <a href="/">Copyright{' '}©{' '}{new Date().getFullYear()}{' '}norestforahero</a>
-            </div>
           </div>
           <div className="container taCenter">
           <LogoContainer>
@@ -165,8 +162,14 @@ export default () => (
                 <Logo />
               </Link>
             </LogoContainer>
+            <div className="cR">
+              <a href="/">Copyright{' '}©{' '}{new Date().getFullYear()}{' '}norestforahero</a>
+            </div>
           </div>
           <div className="container taRight">
+          <Contact>
+                <a href="mailto:info@google.com">support@gatsbystarter.com</a>
+              </Contact>
             <Social>
             <div className="socialMedia">
             <a className="Logo" id="fb" href="https://www.facebook.com"></a>
@@ -174,9 +177,7 @@ export default () => (
             <a className="Logo"id="tw" href="https://www.twitter.com"></a>
             </div>
             </Social>
-            <Contact>
-                <a href="mailto:info@google.com">support@gatsbystarter.com</a>
-              </Contact>
+
           </div>
         </FooterContainer>
       </footer>
