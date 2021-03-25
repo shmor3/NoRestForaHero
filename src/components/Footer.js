@@ -93,6 +93,7 @@ text-decoration: none;
   }
   .socialMedia {
     display: flex;
+    align-items: baseline;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -101,14 +102,17 @@ text-decoration: none;
     #fb {
       background-image: url("/facebook.png");
       width: 2rem;
+    margin-right: 1rem;
     }
     #ig {
       background-image: url("/instagram.png");
       width: 2rem;
+      margin-right: 1rem;
     }
     #tw {
       background-image: url("/twitter.png");
       width: 2rem;
+      margin-right: 1rem;
     }
   }
 `
