@@ -140,10 +140,10 @@ export default () => (
           <div className="container taLeft">
           <Navigation>
               <li>
-                <a href="/">About</a>
+                <a href="/">News</a>
               </li>
               <li>
-                <a href="/">Blog</a>
+                <a href="/">About</a>
               </li>
               <li>
                 <a href="/">Contact</a>
