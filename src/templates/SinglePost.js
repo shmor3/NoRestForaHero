@@ -69,7 +69,7 @@ export const SinglePostTemplate = ({
                 className="SinglePost--Pagination--Link prev"
                 to={prevPostURL}
               >
-                Previous Article
+                Back
               </Link>
             )}
             {nextPostURL && (
@@ -77,7 +77,7 @@ export const SinglePostTemplate = ({
                 className="SinglePost--Pagination--Link next"
                 to={nextPostURL}
               >
-                Next Article
+                Next
               </Link>
             )}
           </div>
