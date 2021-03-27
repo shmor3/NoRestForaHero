@@ -1,20 +1,42 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
+import Image from './Image'
+import Content from './Content'
 import './PageHeader.css'
-import BackgroundVideo from '../components/BackgroundVideo'
 
 const PageHeader = ({
+  title,
+  subtitle,
+  backgroundImage,
+  large,
   className = ''
 }) => {
+  if (large) className += ' PageHeader-large'
   return (
     <div className={`PageHeader relative ${className}`}>
-      <section className="BackgroundVideo-section section">
-        <BackgroundVideo poster="https://ucarecdn.com/69ba14a8-6481-4671-abb6-0e6f0d9c3e46/" videoTitle="">
-          {"https://ucarecdn.com/e6979298-66d6-4245-b496-6e5a5d507135/" && <source src="https://ucarecdn.com/e6979298-66d6-4245-b496-6e5a5d507135/" type="video/mp4" />}
-        </BackgroundVideo>
-      </section>
+      {backgroundImage && (
+        <Image
+          background
+          resolutions="large"
+          src={backgroundImage}
+          alt={title}
+          size="cover"
+        />
+      )}
+      <div className="container relative">
+        <h1 className="PageHeader--Title">{title}</h1>
+        {subtitle && (
+          <Content className="PageHeader--Subtitle" src={subtitle} />
+        )}
+      </div>
     </div>
   )
+}
+
+PageHeader.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string
 }
 
 export default PageHeader

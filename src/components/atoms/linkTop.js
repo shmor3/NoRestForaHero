@@ -29,11 +29,10 @@ const LinkTo = styled.div`
   justify-content: center;
   height: 10rem;
   position: sticky;
-  right: 1rem;
   text-align: center;
-  transition: 0.75s;
+  transition: 0.50s;
   width: 10rem;
-  margin-left: 75vw;
+  margin-left: 78vw;
 
   &:hover {
     background-color: #fff;

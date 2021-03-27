@@ -3,16 +3,15 @@ import { graphql } from 'gatsby'
 
 import Content from '../components/Content'
 import Layout from '../components/Layout'
-import SVGIcon from '../components/SVGIcon'
 
 // Export Template for use in CMS preview
-export const DefaultPageTemplate = ({ body }) => (
+export const DefaultPageTemplate = ({
+  body
+}) => (
   <main className="DefaultPage">
-
     <section className="section">
       <div className="container">
         <Content source={body} />
-        <SVGIcon src="/images/calendar.svg" />
       </div>
     </section>
   </main>
@@ -33,6 +32,11 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       html
+      frontmatter {
+        title
+        subtitle
+        featuredImage
+      }
     }
   }
 `

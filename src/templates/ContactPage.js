@@ -74,10 +74,7 @@ export const pageQuery = graphql`
       ...Meta
       html
       frontmatter {
-        title
         template
-        subtitle
-        featuredImage
         address
         phone
         email

@@ -1,26 +1,28 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
 import Layout from '../components/Layout'
+import BackgroundVideo from '../components/BackgroundVideo'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ body }) => (
+export const HomePageTemplate = ({
+  video,
+  videoPoster,
+  videoTitle,
+ }) => (
   <main className="Home">
-    <PageHeader/>
-
-    <section className="section">
-      <div className="container">
-        <Content source={body} />
-      </div>
+    <section className="BackgroundVideo-section section">
+      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
+        {video && <source src={video} type="video/mp4" />}
+      </BackgroundVideo>
     </section>
   </main>
 )
 
 // Export Default HomePage for front-end
 const HomePage = ({ data: { page } }) => (
-  <Layout meta={page.frontmatter.meta || false}>
+  <Layout meta={page.frontmatter.meta || false}
+  >
     <HomePageTemplate {...page} {...page.frontmatter} body={page.html} />
   </Layout>
 )
@@ -36,6 +38,11 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       html
+      frontmatter {
+        video
+        videoPoster
+        videoTitle
+      }
     }
   }
 `
