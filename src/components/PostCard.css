@@ -1,7 +1,7 @@
 .PostCard {
   text-decoration: none;
   color: inherit;
-  border-radius: 15rem;
+  border-radius: 5rem;
   transition: all 0.15s ease-in-out;
   overflow: hidden;
   text-align: center;

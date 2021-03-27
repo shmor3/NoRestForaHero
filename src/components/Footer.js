@@ -140,19 +140,19 @@ export default () => (
           <div className="container taLeft">
           <Navigation>
               <li>
-                <a href="/">News</a>
+                <a href="/features">Features</a>
               </li>
               <li>
-                <a href="/">About</a>
+                <a href="/contact">Contact</a>
               </li>
               <li>
-                <a href="/">Contact</a>
+                <a href="/faq">FAQ</a>
               </li>
               <li>
-                <a href="/">Terms</a>
+                <a href="/terms-of-service">Terms</a>
               </li>
               <li>
-                <a href="/">Privacy</a>
+                <a href="/privacy-policy">Privacy</a>
               </li>
             </Navigation>
           </div>
@@ -172,9 +172,9 @@ export default () => (
               </Contact>
             <Social>
             <div className="socialMedia">
-            <a className="Logo" id="fb" href="https://www.facebook.com"></a>
-            <a className="Logo" id="ig" href="https://www.instagram.com"></a>
-            <a className="Logo"id="tw" href="https://www.twitter.com"></a>
+            <a className="Logo" id="fb" href="https://www.facebook.com/"></a>
+            <a className="Logo" id="ig" href="https://www.instagram.com/"></a>
+            <a className="Logo"id="tw" href="https://www.twitter.com/"></a>
             </div>
             </Social>
 
