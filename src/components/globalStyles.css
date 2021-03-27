@@ -19,18 +19,18 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
+  background-color: var(--lightGrey);
 }
 
 ::selection {
-  background: rgba(0, 194, 189, 0.6);
+  background: var(--primary);
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
   min-height: 100%;
-  background: var(--lightGrey);
+  background: var(--darkGrey);
 }
 
 body {

@@ -32,7 +32,7 @@ const FooterContainer = styled.footer`
   }
 `
 const BG = styled.div`
-  background: rgba(221, 221, 221, 0.253);
+  background: transparent;
   }
 `
 
