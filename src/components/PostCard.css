@@ -5,6 +5,7 @@
   transition: all 0.15s ease-in-out;
   overflow: hidden;
   text-align: center;
+  background-color: rgba(211, 211, 211, 0.288);
 }
 
 .PostCard:hover,

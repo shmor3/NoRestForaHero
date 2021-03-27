@@ -7,7 +7,7 @@ import './PostCategoriesNav.css'
 const PostCategoriesNav = ({ categories, enableSearch }) => (
   <div className="PostCategoriesNav">
     {enableSearch && <BlogSearch />}
-
+    Sort By
     {categories.map((category, index) => (
       <Link
         exact="true"
