@@ -3,7 +3,7 @@
 }
 
 .SinglePost--BackButton {
-  color: white;
+  color: rgb(0, 0, 0);
   position: relative;
   display: flex;
   align-items: center;

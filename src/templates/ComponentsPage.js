@@ -7,7 +7,6 @@ import Layout from '../components/Layout.js'
 import Accordion from '../components/Accordion'
 import Gallery from '../components/Gallery'
 import Popup from '../components/Popup'
-import LinkTop from '../components/atoms/linkTop'
 
 
 // Export Template for use in CMS preview
@@ -58,7 +57,6 @@ export const ComponentsPageTemplate = ({
         </Popup>
       </div>
     </section>
-  <LinkTop/>
   </main>
 )
 
