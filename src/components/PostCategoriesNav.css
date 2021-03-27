@@ -10,15 +10,15 @@
   margin-left: 1rem;
 }
 #NavLinkfaq {
-  border-radius: 15rem;
+  border-radius: 2rem;
   text-align: center;
-  background-color: rgba(211, 211, 211, 0.288);
+  background-color: var(--lightGrey);
 }
 
 #NavLinkfaq:hover,
 #NavLinkfaq:focus {
   transform: translateY(-1px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
 }
 .PostCategoriesNav input[type='text'] {
   right: 0;
@@ -28,7 +28,7 @@
   border-radius: 2rem;
   font-size: 1.4rem;
   color: black;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
   margin-bottom: 1rem;
   width: 100%;
 }

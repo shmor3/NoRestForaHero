@@ -30,7 +30,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   min-height: 100%;
-  background: var(--darkGrey);
+  background: white;
 }
 
 body {
