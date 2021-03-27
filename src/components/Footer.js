@@ -10,7 +10,7 @@ const FooterContainer = styled.footer`
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1f 2fr 2fr;
-  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+  margin: 0.2rem 0.2rem 0rem 0.2rem;
   padding-bottom: 0.5rem;
   padding-top: 1rem;
   position: relative;
