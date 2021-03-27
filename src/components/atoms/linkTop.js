@@ -32,7 +32,7 @@ const LinkTo = styled.div`
   text-align: center;
   transition: 0.50s;
   width: 10rem;
-  margin-left: 78vw;
+  margin-left: 75vw;
 
   &:hover {
     background-color: #fff;
